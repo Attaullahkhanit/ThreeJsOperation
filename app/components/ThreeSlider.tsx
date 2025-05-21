@@ -14,7 +14,7 @@ const imagePaths = [
 ];
 
 function Carousel() {
-  const groupRef = useRef();
+  const groupRef = useRef<THREE.Group | null>(null);
   const textures = useLoader(THREE.TextureLoader, imagePaths);
   const radius = 5;
   const angleStep = (2 * Math.PI) / textures.length;

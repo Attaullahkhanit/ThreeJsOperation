@@ -17,7 +17,7 @@ export default function ParticleCursor() {
 }
 
 function Particles() {
-  const ref = useRef<any>();
+  const ref = useRef<THREE.Points>(null);
   const count = 5000;
 
   const positions = useMemo(() => {

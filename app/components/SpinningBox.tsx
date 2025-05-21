@@ -4,7 +4,7 @@ import { useFrame, useLoader } from "@react-three/fiber";
 import * as THREE from "three";
 
 export default function SpinningBox() {
-  const meshRef = useRef();
+  const meshRef = useRef<THREE.Mesh | null>(null);
 
   const textures = useLoader(THREE.TextureLoader, [
     "/images/computer.png",

@@ -17,7 +17,7 @@ const Three3DParticles = () => {
 };
 
 function Particles() {
-  const ref = useRef<any>();
+  const ref = useRef<THREE.Points | null>(null);
   const count = 2000;
 
   const positions = useMemo(() => {
